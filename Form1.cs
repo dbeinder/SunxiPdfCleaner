@@ -73,7 +73,7 @@ namespace SunxiPdfCleaner
                     pdfStamper.RotateContents = false;
 
                     var processor = cbReplaceText.Checked
-                        ? new TextReplaceStreamEditor(tbReplaceMatch.Text, tbReplaceReplace.Text)
+                        ? new TextReplaceStreamEditor(tbReplaceMatch.Text, tbReplaceReplace.Text, rbRegEx.Checked)
                         : new PdfContentStreamEditor();
                     processor.RemoveXObjects = cbRemoveXO.Checked;
                     processor.Watermark = new Regex(tbWatermark.Text, RegexOptions.Compiled);

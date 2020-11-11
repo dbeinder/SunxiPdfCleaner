@@ -46,6 +46,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblProgress = new System.Windows.Forms.Label();
+            this.rbContains = new System.Windows.Forms.RadioButton();
+            this.rbRegEx = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,7 +104,7 @@
             this.tbReplaceMatch.Location = new System.Drawing.Point(147, 97);
             this.tbReplaceMatch.Margin = new System.Windows.Forms.Padding(4);
             this.tbReplaceMatch.Name = "tbReplaceMatch";
-            this.tbReplaceMatch.Size = new System.Drawing.Size(365, 22);
+            this.tbReplaceMatch.Size = new System.Drawing.Size(320, 22);
             this.tbReplaceMatch.TabIndex = 4;
             this.tbReplaceMatch.Text = "nulleasitek";
             // 
@@ -233,11 +235,35 @@
             this.lblProgress.TabIndex = 21;
             this.lblProgress.Text = " ";
             // 
+            // rbContains
+            // 
+            this.rbContains.AutoSize = true;
+            this.rbContains.Location = new System.Drawing.Point(474, 97);
+            this.rbContains.Name = "rbContains";
+            this.rbContains.Size = new System.Drawing.Size(84, 21);
+            this.rbContains.TabIndex = 22;
+            this.rbContains.Text = "Contains";
+            this.rbContains.UseVisualStyleBackColor = true;
+            // 
+            // rbRegEx
+            // 
+            this.rbRegEx.AutoSize = true;
+            this.rbRegEx.Checked = true;
+            this.rbRegEx.Location = new System.Drawing.Point(474, 72);
+            this.rbRegEx.Name = "rbRegEx";
+            this.rbRegEx.Size = new System.Drawing.Size(70, 21);
+            this.rbRegEx.TabIndex = 23;
+            this.rbRegEx.TabStop = true;
+            this.rbRegEx.Text = "RegEx";
+            this.rbRegEx.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 554);
+            this.Controls.Add(this.rbRegEx);
+            this.Controls.Add(this.rbContains);
             this.Controls.Add(this.lblProgress);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbSuffix);
@@ -257,7 +283,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Sunxi PDF Cleaner v0.1";
+            this.Text = "Sunxi PDF Cleaner v0.2";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -284,6 +310,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblProgress;
+        private System.Windows.Forms.RadioButton rbContains;
+        private System.Windows.Forms.RadioButton rbRegEx;
     }
 }
 
